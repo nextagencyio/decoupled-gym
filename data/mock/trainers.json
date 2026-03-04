@@ -1,0 +1,129 @@
+{
+  "data": {
+    "nodeTrainers": {
+      "__typename": "NodeTrainerConnection",
+      "nodes": [
+        {
+          "__typename": "NodeTrainer",
+          "id": "trainer-marcus",
+          "title": "Marcus Johnson",
+          "path": "/trainers/marcus-johnson",
+          "body": {
+            "processed": "<p>12 years of competitive powerlifting and coaching experience. Marcus specializes in building raw strength and confidence through evidence-based programming tailored to each client's goals and ability level.</p><p>Whether you are training for your first competition or simply want to feel stronger in everyday life, Marcus will design a program that gets you there safely and efficiently.</p>",
+            "summary": "12 years of competitive powerlifting and coaching experience. Marcus specializes in building raw strength and confidence through evidence-based programming tailored to each client's goals and ability "
+          },
+          "specialty": "Strength & Powerlifting",
+          "email": "marcus@ironfitgym.com",
+          "certifications": "NSCA-CSCS, USAW Level 2",
+          "experienceYears": "12",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=800&q=80",
+            "alt": "Marcus Johnson, strength trainer",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeTrainer",
+          "id": "trainer-sarah",
+          "title": "Sarah Kim",
+          "path": "/trainers/sarah-kim",
+          "body": {
+            "processed": "<p>Former Division I track athlete who brings infectious energy to every session. Sarah combines sport science with creative programming for challenging, fun workouts that deliver real results.</p><p>Her specialties include metabolic conditioning, athletic performance, and body recomposition for clients who want to look and feel their best.</p>",
+            "summary": "Former Division I track athlete who brings infectious energy to every session. Sarah combines sport science with creative programming for challenging, fun workouts that deliver real results.Her specia"
+          },
+          "specialty": "HIIT & Conditioning",
+          "email": "sarah@ironfitgym.com",
+          "certifications": "ACE-CPT, Precision Nutrition L1",
+          "experienceYears": "8",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=800&q=80",
+            "alt": "Sarah Kim, HIIT trainer",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeTrainer",
+          "id": "trainer-david",
+          "title": "David Chen",
+          "path": "/trainers/david-chen",
+          "body": {
+            "processed": "<p>Former amateur boxing champion combining traditional boxing technique with modern sports science. David specializes in functional training, mobility work, and injury prevention.</p><p>His client-first approach focuses on sustainable fitness habits and long-term progress over quick fixes.</p>",
+            "summary": "Former amateur boxing champion combining traditional boxing technique with modern sports science. David specializes in functional training, mobility work, and injury prevention.His client-first approa"
+          },
+          "specialty": "Boxing & Functional Training",
+          "email": "david@ironfitgym.com",
+          "certifications": "NASM-CPT, USA Boxing Coach",
+          "experienceYears": "10",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1583468982228-19f19164aee2?w=800&q=80",
+            "alt": "David Chen, boxing and functional trainer",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1583468982228-19f19164aee2?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1583468982228-19f19164aee2?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1583468982228-19f19164aee2?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

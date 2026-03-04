@@ -1,0 +1,135 @@
+{
+  "data": {
+    "nodeMemberships": {
+      "__typename": "NodeMembershipConnection",
+      "nodes": [
+        {
+          "__typename": "NodeMembership",
+          "id": "mem-basic",
+          "title": "Basic",
+          "path": "/memberships/basic",
+          "body": {
+            "processed": "<p>Full access to the gym floor, cardio zone, and free weight area during staffed hours. The perfect plan for self-directed fitness enthusiasts.</p>",
+            "summary": "Full access to the gym floor, cardio zone, and free weight area during staffed hours. The perfect plan for self-directed fitness enthusiasts."
+          },
+          "priceMonthly": "$29/mo",
+          "includes": {
+            "processed": "<ul><li>Gym floor access during staffed hours</li><li>Cardio and free weight zones</li><li>Locker room and showers</li><li>Free initial fitness assessment</li></ul>",
+            "summary": "Gym floor access during staffed hoursCardio and free weight zonesLocker room and showersFree initial fitness assessment"
+          },
+          "featured": false,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&q=80",
+            "alt": "Gym floor with equipment",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeMembership",
+          "id": "mem-premium",
+          "title": "Premium",
+          "path": "/memberships/premium",
+          "body": {
+            "processed": "<p>Our most popular membership with 24/7 keycard access, unlimited group fitness classes, and exclusive recovery zone perks. Everything you need to train on your terms.</p>",
+            "summary": "Our most popular membership with 24/7 keycard access, unlimited group fitness classes, and exclusive recovery zone perks. Everything you need to train on your terms."
+          },
+          "priceMonthly": "$59/mo",
+          "includes": {
+            "processed": "<ul><li>24/7 keycard access</li><li>Unlimited group fitness classes</li><li>Recovery zone (sauna, cold plunge)</li><li>2 personal training sessions per month</li><li>2 guest passes per month</li></ul>",
+            "summary": "24/7 keycard accessUnlimited group fitness classesRecovery zone (sauna, cold plunge)2 personal training sessions per month2 guest passes per month"
+          },
+          "featured": true,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&q=80",
+            "alt": "Premium gym facilities",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeMembership",
+          "id": "mem-elite",
+          "title": "Elite",
+          "path": "/memberships/elite",
+          "body": {
+            "processed": "<p>The ultimate fitness experience. Unlimited personal training, priority class booking, private locker, and VIP amenities for members who demand the best.</p>",
+            "summary": "The ultimate fitness experience. Unlimited personal training, priority class booking, private locker, and VIP amenities for members who demand the best."
+          },
+          "priceMonthly": "$99/mo",
+          "includes": {
+            "processed": "<ul><li>Everything in Premium</li><li>Unlimited personal training</li><li>Priority class booking</li><li>Private locker</li><li>Monthly body composition analysis</li><li>Complimentary protein bar and towel service</li></ul>",
+            "summary": "Everything in PremiumUnlimited personal trainingPriority class bookingPrivate lockerMonthly body composition analysisComplimentary protein bar and towel service"
+          },
+          "featured": false,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=800&q=80",
+            "alt": "Elite training area",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "data": {
+    "nodeHomepages": {
+      "__typename": "NodeHomepageConnection",
+      "nodes": [
+        {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "IronFit Gym",
+          "path": "/homepage",
+          "heroTitle": "Forge Your Strongest Self",
+          "heroSubtitle": "IronFit Gym & Fitness Center",
+          "heroDescription": {
+            "processed": "<p>Premium fitness facility with world-class equipment, expert trainers, and a supportive community dedicated to helping you reach your goals.</p>",
+            "summary": "Premium fitness facility with world-class equipment, expert trainers, and a supportive community dedicated to helping you reach your goals."
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-members",
+              "title": "",
+              "number": "2,500+",
+              "label": "Active Members"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-classes",
+              "title": "",
+              "number": "60+",
+              "label": "Weekly Classes"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-trainers",
+              "title": "",
+              "number": "15",
+              "label": "Certified Trainers"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-equipment",
+              "title": "",
+              "number": "200+",
+              "label": "Pieces of Equipment"
+            }
+          ],
+          "featuredItemsTitle": "Popular Classes",
+          "ctaTitle": "Ready to Transform Your Fitness?",
+          "ctaDescription": {
+            "processed": "<p>Start your journey today with a free 7-day trial. No commitment, no pressure -- just results.</p>",
+            "summary": "Start your journey today with a free 7-day trial. No commitment, no pressure -- just results."
+          },
+          "ctaPrimary": "Start Free Trial",
+          "ctaSecondary": "View Memberships"
+        }
+      ]
+    }
+  }
+}
