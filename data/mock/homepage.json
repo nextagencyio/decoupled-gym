@@ -19,28 +19,28 @@
               "__typename": "ParagraphStatItem",
               "id": "stat-members",
               "title": "",
-              "number": "2,500+",
+              "number": "2,500+", "value": "2,500+",
               "label": "Active Members"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-classes",
               "title": "",
-              "number": "60+",
+              "number": "60+", "value": "60+",
               "label": "Weekly Classes"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-trainers",
               "title": "",
-              "number": "15",
+              "number": "15", "value": "15",
               "label": "Certified Trainers"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-equipment",
               "title": "",
-              "number": "200+",
+              "number": "200+", "value": "200+",
               "label": "Pieces of Equipment"
             }
           ],
