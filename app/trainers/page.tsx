@@ -8,6 +8,7 @@ import Footer from '../components/Footer'
 import TrainerCard from '../components/TrainerCard'
 
 export const revalidate = 3600
+export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'Trainers | Iron Peak Fitness',
