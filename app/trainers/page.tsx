@@ -1,6 +1,5 @@
+import { getClient } from '@/lib/drupal-client'
 import { Metadata } from 'next'
-import { headers } from 'next/headers'
-import { getServerApolloClient } from '@/lib/apollo-client'
 import { GET_TRAINERS } from '@/lib/queries'
 import { TrainersData } from '@/lib/types'
 import Header from '../components/Header'
@@ -17,13 +16,8 @@ export const metadata: Metadata = {
 
 async function getTrainers() {
   try {
-    const requestHeaders = await headers()
-    const apolloClient = getServerApolloClient(requestHeaders)
-    const { data } = await apolloClient.query<TrainersData>({
-      query: GET_TRAINERS,
-      variables: { first: 50 },
-      fetchPolicy: 'cache-first',
-    })
+    const client = getClient()
+    const { data } = await client.raw(GET_TRAINERS, { first: 50 })
     return data?.nodeTrainers?.nodes || []
   } catch (error) {
     console.error('Error fetching trainers:', error)
