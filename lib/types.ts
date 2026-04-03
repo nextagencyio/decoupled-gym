@@ -57,14 +57,15 @@ export interface DrupalPage extends DrupalNode {
   }
 }
 
-export interface DrupalHomepage extends DrupalNode {
+export interface DrupalHomepage {
+  id: string
+  title: string
+  path?: string
   heroTitle?: string
   heroSubtitle?: string
   heroDescription?: {
     processed: string
   }
-  featuresTitle?: string
-  featuresSubtitle?: string
   featuresItems?: DrupalFeature[]
   ctaTitle?: string
   ctaDescription?: {
@@ -99,7 +100,6 @@ export interface DrupalClass {
   difficultyLevel?: string
   duration?: string
   schedule?: string
-  instructorName?: string
   image?: { url: string; alt: string; width?: number; height?: number; variations?: { name: string; url: string; width: number; height: number }[] }
 }
 
@@ -117,7 +117,6 @@ export interface DrupalTrainer {
   specialty?: string
   email?: string
   certifications?: string
-  experienceYears?: string
   photo?: { url: string; alt: string; width?: number; height?: number; variations?: { name: string; url: string; width: number; height: number }[] }
 }
 
@@ -133,8 +132,8 @@ export interface DrupalMembership {
   path?: string
   body?: { processed: string; summary?: string }
   priceMonthly?: string
-  includes?: { processed: string; summary?: string }
-  featured?: string
+  includes?: { processed: string }
+  featured?: boolean
   image?: { url: string; alt: string; width?: number; height?: number; variations?: { name: string; url: string; width: number; height: number }[] }
 }
 

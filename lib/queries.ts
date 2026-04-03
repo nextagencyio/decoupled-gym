@@ -1,78 +1,6 @@
 // Tagged template that returns the query string
 const gql = (strings: TemplateStringsArray, ...values: any[]) => strings.reduce((a, s, i) => a + s + (values[i] || ''), '')
 
-export const GET_ARTICLE_TEASERS = gql`
-  query GetArticleTeasers($first: Int = 10) {
-    nodeArticles(first: $first, sortKey: CREATED_AT) {
-      nodes {
-        id
-        title
-        path
-        created {
-          timestamp
-        }
-        changed {
-          timestamp
-        }
-        ... on NodeArticle {
-          body {
-            processed
-            summary
-          }
-          image {
-            url
-            alt
-            width
-            height
-            variations(styles: [LARGE, MEDIUM, THUMBNAIL]) {
-              name
-              url
-              width
-              height
-            }
-          }
-        }
-      }
-    }
-  }
-`
-
-export const GET_ARTICLE_BY_PATH = gql`
-  query GetArticleByPath($path: String!) {
-    route(path: $path) {
-      ... on RouteInternal {
-        entity {
-          ... on NodeArticle {
-            id
-            title
-            body {
-              processed
-            }
-            created {
-              timestamp
-            }
-            changed {
-              timestamp
-            }
-            image {
-              url
-              alt
-              width
-              height
-              variations(styles: [LARGE, MEDIUM, THUMBNAIL]) {
-                name
-                url
-                width
-                height
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`
-
 export const GET_HOMEPAGE_DATA = gql`
   query GetHomepageData {
     nodeHomepages(first: 1) {
@@ -82,11 +10,12 @@ export const GET_HOMEPAGE_DATA = gql`
         path
         heroTitle
         heroSubtitle
-        heroDescription { processed summary }
-        statsItems { ... on ParagraphStatItem { id title description { processed } icon } }
-        featuredItemsTitle
+        heroDescription { processed }
+        featuresItems {
+          ... on ParagraphFeatureItem { id title description { processed } icon }
+        }
         ctaTitle
-        ctaDescription { processed summary }
+        ctaDescription { processed }
         ctaPrimary
         ctaSecondary
       }
@@ -106,31 +35,6 @@ export const GET_NODE_BY_PATH = gql`
               processed
             }
           }
-          ... on NodeArticle {
-            id
-            title
-            body {
-              processed
-            }
-            created {
-              timestamp
-            }
-            changed {
-              timestamp
-            }
-            image {
-              url
-              alt
-              width
-              height
-              variations(styles: [LARGE, MEDIUM, THUMBNAIL]) {
-                name
-                url
-                width
-                height
-              }
-            }
-          }
           ... on NodeHomepage {
             id
             title
@@ -139,8 +43,6 @@ export const GET_NODE_BY_PATH = gql`
             heroDescription {
               processed
             }
-            featuresTitle
-            featuresSubtitle
             featuresItems {
               ... on ParagraphFeatureItem {
                 id
@@ -157,6 +59,36 @@ export const GET_NODE_BY_PATH = gql`
             }
             ctaPrimary
             ctaSecondary
+          }
+          ... on NodeClass {
+            id
+            title
+            path
+            body { processed summary }
+            difficultyLevel
+            duration
+            schedule
+            image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+          }
+          ... on NodeTrainer {
+            id
+            title
+            path
+            body { processed summary }
+            specialty
+            email
+            certifications
+            photo { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+          }
+          ... on NodeMembership {
+            id
+            title
+            path
+            body { processed summary }
+            priceMonthly
+            includes { processed }
+            featured
+            image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
           }
         }
       }
@@ -177,7 +109,6 @@ export const GET_CLASSES = gql`
           difficultyLevel
           duration
           schedule
-          instructorName
           image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
         }
       }
@@ -194,12 +125,11 @@ export const GET_CLASS_BY_PATH = gql`
             id
             title
             path
-          body { processed summary }
-          difficultyLevel
-          duration
-          schedule
-          instructorName
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+            body { processed summary }
+            difficultyLevel
+            duration
+            schedule
+            image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
           }
         }
       }
@@ -220,7 +150,6 @@ export const GET_TRAINERS = gql`
           specialty
           email
           certifications
-          experienceYears
           photo { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
         }
       }
@@ -237,12 +166,11 @@ export const GET_TRAINER_BY_PATH = gql`
             id
             title
             path
-          body { processed summary }
-          specialty
-          email
-          certifications
-          experienceYears
-          photo { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+            body { processed summary }
+            specialty
+            email
+            certifications
+            photo { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
           }
         }
       }
@@ -261,7 +189,7 @@ export const GET_MEMBERSHIPS = gql`
         ... on NodeMembership {
           body { processed summary }
           priceMonthly
-          includes { processed summary }
+          includes { processed }
           featured
           image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
         }
@@ -279,11 +207,11 @@ export const GET_MEMBERSHIP_BY_PATH = gql`
             id
             title
             path
-          body { processed summary }
-          priceMonthly
-          includes { processed summary }
-          featured
-          image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
+            body { processed summary }
+            priceMonthly
+            includes { processed }
+            featured
+            image { url alt width height variations(styles: [LARGE, MEDIUM, THUMBNAIL]) { name url width height } }
           }
         }
       }
